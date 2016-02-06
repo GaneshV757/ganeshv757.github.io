@@ -1,0 +1,21 @@
+[class^="gradient-"] {
+  width: 100vw;
+  height: 100vh;
+}
+
+.gradient-black {
+  background:
+    linear-gradient(
+      to right,
+      rgba(25,33,41,.5) 0%,
+      rgba(69,69,75,.1) 60%,
+      rgba(25,33,41,.5) 100%
+    ),
+    #303641 linear-gradient(
+      90deg,
+      #192129,
+      #303641,
+      #484e57
+    );
+  background-size: 5px, 100%;
+}
