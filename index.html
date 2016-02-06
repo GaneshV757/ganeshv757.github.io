@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/mountain.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
-	<body class="gradient-black">
-	<div>
+	<body>
         <svg></svg>
-		<h2><a href="new.html">Hi</a></h2>
-		<h1>Hello</h1>
-	</div>
-		<button onClick="history.go(0)">Refresh ?</button>
-		<script type="text/javascript" src="js/query-1.12.0.min.js"></script>
+        <div id="land-jumbotron" class="container">
+            <div class="jumbotron white transparent box-shadow--4dp wow zoomIn">
+                <div class="typed" style="display: inline-block;"></div>
+                <br/>
+                <button type="button" onClick="hisotry.go(0);" class="btn btn-default btn-lg wow flipInX" data-wow-delay="7.5s">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Learn More!
+                </button>
+                <!--<h1 class="text-center"><a href="new.html">The Ganesh V</a></h1>-->
+            </div>
+        </div>
+        <button type="button" onClick="hisotry.go(0);" class="btn btn-default btn-lg refresh-btn">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Refresh
+        </button>
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/TweenMax.min.js"></script>
 		<script type="text/javascript" src="js/mountain.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/typed.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#land-jumbotron').hide().delay(2650).fadeIn(0);
+                $(function(){
+                $(".typed").typed({
+                    strings: ["^3250", "<b>Student</b>", "<b>Baller</b>", "<b>Swagger</b>", "<b>Coder</b>", "<b>The Ganesh Valliappan</b>"],
+                    typeSpeed: 0
+                });
+              });
+            });
+            new WOW().init();
+        </script>
 	</body>
 </html>

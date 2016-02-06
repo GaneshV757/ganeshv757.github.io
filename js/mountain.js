@@ -1,9 +1,8 @@
 var svgNS = "http://www.w3.org/2000/svg";
 var svg = document.querySelector("svg");
-console.log(svg);
 var colors = ["#725269", "#1A2040", "#FFD06B", "#F39A6C", "#A46E63"];
 var colors = ["#FFCC6E", "#FBA470", "#A4453F", "#90404C", "#AF4764"];
-var amount = 12;
+var amount = 11;
 var ww = window.innerWidth;
 var wh = window.innerHeight;
 var mountains = [];
@@ -57,7 +56,7 @@ for (var i = 0; i < amount; i++) {
   TweenMax.from(mountains[i], 3, {
     y: wh,
     ease: Power2.easeOut,
-    delay: (i / 1.5)
+    delay: (i / 9)
   });
 }
 
