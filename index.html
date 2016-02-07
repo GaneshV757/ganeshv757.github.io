@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <title>The Ganesh Valliappan</title>
+        <meta charset="UTF-8" />
+        <meta description="The Ganesh Valliappan" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/mountain.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
@@ -10,17 +13,27 @@
         <svg></svg>
         <div id="land-jumbotron" class="container">
             <div class="jumbotron white transparent box-shadow--4dp wow zoomIn">
-                <div class="typed" style="display: inline-block;"></div>
+                <div class="typed" style="display: inline-block; font-family: raleway;"></div>
                 <br/>
-                <button type="button" onClick="hisotry.go(0);" class="btn btn-default btn-lg wow flipInX" data-wow-delay="7.5s">
+                <button id="learn-more" type="button" onClick="hisotry.go(0);" class="btn btn-default btn-lg wow flipInY">
                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Learn More!
                 </button>
-                <!--<h1 class="text-center"><a href="new.html">The Ganesh V</a></h1>-->
             </div>
         </div>
-        <button type="button" onClick="history.go(0);" class="btn btn-default btn-lg refresh-btn">
+        <button id="refresh" type="button" onClick="history.go(0);" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
         </button>
+        <a id="continue" type="button" href="new.html" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-share" aria-hidden="true"></span> To Website!
+        </a>
+        <div id="logo-contact">
+            <img src="images/facebook/FB-f-logo__blue_100.png" height="32px" width="32px" />
+            <img src="images/google/btn_google+_dark_normal_ios.png" height="32px" width="32px" />
+            <img src="images/github/GitHub-Mark-32px.png" />
+            <img src="images/google/logo_gmail_32px.png" />
+            <img src="images/twitter/TwitterLogo.png" height="32px" width="32px" />
+            <img src="images/instagram/Instagram_Icon_Large.png" height="32px" width="32px" />
+        </div>
 		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -30,12 +43,20 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#land-jumbotron').hide().delay(2650).fadeIn(0);
+                $('#learn-more').hide();
+                $('#refresh').hide();
+                $('#logo-contact').hide();
                 $(function(){
-                $(".typed").typed({
-                    strings: ["^3250", "<b>Student</b>", "<b>Baller</b>", "<b>Swagger</b>", "<b>Coder</b>", "<b>The Ganesh Valliappan</b>"],
-                    typeSpeed: 0
+                    $(".typed").typed({
+                        strings: ["^3250", "Student", "Baller", "Swagger", "Coder", "<i>The</i> Ganesh Valliappan"],
+                        typeSpeed: 0,
+                        callback: function() {
+                            $('#learn-more').fadeIn(0);
+                            $('#refresh').fadeIn(0);
+                            $('#logo-contact').fadeIn(0);
+                        }
+                    });
                 });
-              });
             });
             new WOW().init();
         </script>
