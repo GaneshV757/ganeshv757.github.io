@@ -1,7 +1,10 @@
 var svgNS = "http://www.w3.org/2000/svg";
 var svg = document.querySelector("svg");
-var colors = ["#725269", "#1A2040", "#FFD06B", "#F39A6C", "#A46E63"];
-var colors = ["#FFCC6E", "#FBA470", "#A4453F", "#90404C", "#AF4764"];
+//var colors = ["#725269", "#1A2040", "#FFD06B", "#F39A6C", "#A46E63"];
+//var colors = ["#FFCC6E", "#FBA470", "#A4453F", "#90404C", "#AF4764"];
+//var colors = ["#677077", "#b5b5b7", "#f2b632"];
+//var colors = ["#7890A8", "#304878", "#181848", "#F0A818"];
+var colors = ["#480048", "#601848", "#C04848", "#F07241"];
 var amount = 11;
 var ww = window.innerWidth;
 var wh = window.innerHeight;
@@ -23,7 +26,7 @@ for (var i = 0; i < amount; i++) {
 
   var mountain = document.createElementNS(svgNS, "polygon");
   mountain.setAttributeNS(null, "points", x + "," + wh + " " + x2 + "," + wh + "" + " " + middle + "," + y);
-  mountain.setAttributeNS(null, "fill", colors[i % 5]);
+  mountain.setAttributeNS(null, "fill", colors[i % 4]);
 
   var snow = document.createElementNS(svgNS, "polygon");
   snow.setAttributeNS(null, "r", "10");
