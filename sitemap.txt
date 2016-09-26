@@ -1,0 +1,6 @@
+index.html
+|>home.html
+||>about.html
+||>contact.html
+||>blog.html
+||>
