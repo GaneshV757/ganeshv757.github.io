@@ -282,3 +282,7 @@ nav.shrink .navbar-brand img {
   left:0;
   z-index: -1;
 }
+
+.thirty-two {
+    font-size: 32px;
+}
