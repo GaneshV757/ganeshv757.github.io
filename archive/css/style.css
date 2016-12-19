@@ -283,6 +283,20 @@ nav.shrink .navbar-brand img {
   z-index: -1;
 }
 
+<<<<<<< HEAD:css/style.css
 .thirty-two {
     font-size: 32px;
+=======
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68); //IE
+    background: rgba(0, 0, 0, 0.78); //NON-IE
+>>>>>>> origin/master:archive/css/style.css
 }

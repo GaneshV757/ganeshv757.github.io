@@ -1,77 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
         <title>The Ganesh Valliappan</title>
         <meta charset="UTF-8" />
         <meta description="The Ganesh Valliappan" />
-		<meta name="google-site-verification" content="nfzkcaynwcJYlPSjyCNIdeW9eBEY7te6tG8wD3LPZCY" />
-		<link rel="shortcut icon" href="images/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/mountain.css" />
-		<link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
-	</head>
-	<body>
-        <svg style="position: absolute; margin-top: 0;"></svg>
-        <div id="land-jumbotron" class="container">
-            <div class="jumbotron white transparent box-shadow--6dp wow zoomIn">
-                <div class="typed" style="display: inline-block; font-family: raleway;"></div>
-                <br/>
-                <a id="learn-more" type="button" href="home.html" class="btn btn-default btn-lg wow flipInY">
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Learn More!
-                </a>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" style="text/css" href="css/main.css" />
+        <link rel="stylesheet" style="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <div id="jumbotron">
+            <div id="landing-text">
+                <h1>Coder. Developer. Student.</h1>
+            </div>
+            <div id="landing-info">
+                <button class="hollow">Contact</button>
+                <button class="hollow">Resume</button>
             </div>
         </div>
-        <button id="refresh" type="button" onClick="history.go(0);" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh
-        </button>
-        <a id="continue" type="button" href="home.html" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> To Website!
-        </a>
-        <div id="logo-contact" class="white">
-			<a href<i class="icon ion-social-facebook thirty-two"></i>
-			<i class="icon ion-social-googleplus thirty-two"></i>
-            <img src="images/facebook/FB-f-Logo_blue_50.png" height="32px" width="32px" />
-            <img src="images/google/btn_google+_dark_normal_ios.png" height="32px" width="32px" />
-            <img src="images/github/GitHub-Mark-32px.png" />
-            <img src="images/google/logo_gmail_32px.png" />
-            <img src="images/twitter/TwitterLogo.png" height="32px" width="32px" />
-            <img src="images/instagram/Instagram_Icon_Large.png" height="32px" width="32px" />
-        </div>
-		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/TweenMax.min.js"></script>
-		<script type="text/javascript" src="js/mountain.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/typed.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#land-jumbotron').hide().delay(2650).fadeIn(0);
-                $('#learn-more').hide();
-                $('#refresh').hide();
-                // $('#logo-contact').hide();
-                $(function(){
-                    $(".typed").typed({
-                        strings: ["^3250"],
-                        typeSpeed: 0,
-                        callback: function() {
-                            $('#learn-more').fadeIn(0);
-                            $('#refresh').fadeIn(0);
-                            // $('#logo-contact').fadeIn(0);
-                        }
-                    });
-                });
-            });
-            new WOW().init();
-
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-73543410-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-	</body>
+        <script type="text/javascript" src="scripts.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
 </html>

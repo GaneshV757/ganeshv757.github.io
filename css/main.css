@@ -1,0 +1,60 @@
+@font-face {
+    font-family: junction;
+    font-weight: normal;
+    src: url('../fonts/Junction-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: junction;
+    font-weight: bold;
+    src: url('../fonts/Junction-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: aller;
+    font-weight: normal;
+    src: url('../fonts/Aller_Rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: aller;
+    font-weight: bold;
+    src: url('../fonts/Aller_Bd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: aller-display;
+    src: url('../fonts/AllerDisplay.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: bold;
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: normal;
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: aller-display;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+button {
+    font-family: aller;
+    font-size: 36px;
+    border-radius: 4px;
+}
+
+p {
+    font-family: junction;
+    font-weight: normal;
+}
