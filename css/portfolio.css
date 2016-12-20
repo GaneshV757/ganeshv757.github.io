@@ -1,0 +1,89 @@
+body {
+    background-color: rgba(25, 25, 25, 1);
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+li {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#folio {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 85vw;
+}
+
+.article {
+    width: 100%;
+    display: block;
+    padding: 1vh;
+    background-color: rgba(200, 200, 200, 1);
+    float: left;
+}
+
+/* Add some padding inside the card container */
+.description {
+    padding: 2px 16px;
+}
+
+@media (max-width: 992px) {
+    .small {
+        max-width: 97.5%;
+        margin: 0 0 2vh 0;
+    }
+}
+
+@media (min-width: 993px) {
+    .left {
+        max-width: 47.5%;
+        margin: 0 1% 4vh 0;
+    }
+
+    .right {
+        max-width: 47.5%;
+        margin: 0 0 4vh 1%;
+    }
+}
+
+.description {
+    max-height: 100%;
+    background-color: rgba(25, 25, 25, 1);
+    color: white;
+}
+
+.small > img {
+    width: 100%;
+}

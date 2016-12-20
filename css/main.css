@@ -1,3 +1,5 @@
+@import url('font-awesome.min.css');
+
 @font-face {
     font-family: junction;
     font-weight: normal;
@@ -46,11 +48,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 64px;
+    color: rgba(255, 255, 255, 1);
+}
+
+h2 {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1);
+}
+
+h4 {
+    font-size: 24px;
 }
 
 li {
     font-family: aller;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 button {
@@ -62,4 +74,9 @@ button {
 p {
     font-family: junction;
     font-weight: normal;
+    font-size: 16px;
+}
+
+.content {
+    text-align: center;
 }
