@@ -1,28 +1,14 @@
 body {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-}
-
-body::before {
-    background-color: rgba(0, 0, 0, 1);
-}
-
-#jumbotron {
-    text-align: center;
-    padding: 5% 0;
-    color: white;
-}
-
-#landing-text {
-    padding: 10% 0 0 0;
+    background-color: rgba(25, 25, 25, 1);
 }
 
 ul {
-    display: inline;
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 li {
@@ -45,13 +31,22 @@ li a {
 }
 
 li a:hover {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
 }
 
 .active {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.brand {
-    color: black;
+@media (max-width: 992px) {
+    #message {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 993px) {
+    #message {
+        height: 30vh;
+    }
 }
