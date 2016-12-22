@@ -50,3 +50,21 @@ li a:hover {
         height: 30vh;
     }
 }
+
+.content {
+    color: white;
+}
+
+#email-contact {
+    margin-bottom: 10vh;
+}
+
+#social {
+    word-spacing: 9px;
+    line-height: 9px;
+}
+
+#social > a {
+    color: white;
+    outline: none;
+}
