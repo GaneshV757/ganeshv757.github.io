@@ -58,11 +58,16 @@ h2 {
 
 h4 {
     font-size: 24px;
+    color: rgba(255, 255, 255, 1);
 }
 
 li {
     font-family: aller;
     font-size: 18px;
+}
+
+li > a {
+    outline: none;
 }
 
 .hollow {
@@ -87,6 +92,7 @@ p {
     font-family: junction;
     font-weight: normal;
     font-size: 16px;
+    color: rgba(255, 255, 255, 1);
 }
 
 .content {
