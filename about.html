@@ -7,6 +7,8 @@
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" style="text/css" href="css/main.css" />
         <link rel="stylesheet" style="text/css" href="css/about.css" />
+        <link rel="stylesheet" style="text/css" href="css/slick.css" />
+        <link rel="stylesheet" style="text/css" href="css/slick-theme.css" />
     </head>
     <body>
         <nav>
@@ -22,33 +24,39 @@
 
         <div class="content">
             <h2>About Me</h2>
-            <div id="about-content">
-                <div id="jcarousel-wrapper">
-                    <div class="jcarousel">
-                        <ul>
-                            <li><img src="http://placehold.it/750x500" /></li>
-                            <li><img src="http://placehold.it/50x500" /></li>
-                            <li><img src="http://placehold.it/75x50" /></li>
-                            <li><img src="http://placehold.it/75x50" /></li>
-                            <li><img src="http://placehold.it/75x50" /></li>
-                            <li><img src="http://placehold.it/75x50" /></li>
-                            <li><img src="http://placehold.it/75x50" /></li>
-                        </ul>
-                    </div>
-                    <div id="carousel-buttons">
-                        <div class="floater">
-                            <a class="jcarousel-prev" href="#"><i class="icon fa fa-caret-square-o-left fa-lg"></i></a>
-                        </div>
-                        <div class="jcarousel-pagination floater"></div>
-                        <div class="floater">
-                            <a class="jcarousel-next" href="#"><i class="icon fa fa-caret-square-o-right fa-lg"></i></a>
-                        </div>
-                    </div>
+
+            <div class="carousel">
+                <div>
+                    <img src="http://placehold.it/350x300?text=1">
+                </div>
+                <div>
+                    <img src="http://placehold.it/350x300?text=2">
+                </div>
+                <div>
+                    <img src="http://placehold.it/350x300?text=3">
+                </div>
+                <div>
+                    <img src="http://placehold.it/350x300?text=4">
+                </div>
+                <div>
+                    <img src="http://placehold.it/350x300?text=5">
+                </div>
+                <div>
+                    <img src="http://placehold.it/350x300?text=6">
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="js/jcarousel.min.js"></script>
-        <script type="text/javascript" src="js/about.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+                $(".carousel").slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                });
+            });
+        </script>
     </body>
 </html>
