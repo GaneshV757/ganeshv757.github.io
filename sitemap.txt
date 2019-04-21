@@ -1,5 +1,0 @@
-index.html
-|>about.html
-|>contact.html
-|>portfolio.html
-|>resume.html
