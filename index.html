@@ -1,45 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Your page title here :)</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/barebones.css">
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/brands.min.css">
+        <link rel="stylesheet" href="css/solid.min.css">
+        <link rel="stylesheet" href="css/custom.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon-16.png">
+        <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="images/favicon-16.png">
 
-</head>
-<body>
+    </head>
+    <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="grid-container halves">
-      <div>
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="https://acahir.github.io/Barebones/">Barebones documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+        <nav class="demo">
+            <a href="#" class="brand">
+                <img class="logo" src="https://via.placeholder.com/50" />
+                <span>About Me</span>
+            </a>
+
+            <!-- responsive-->
+            <input id="bmenub" type="checkbox" class="show">
+            <label for="bmenub" class="burger pseudo button">menu</label>
+
+            <div class="menu">
+                <a href="#about" class="pseudo button">About</a>
+                <a href="#skills" class="pseudo button">Skills</a>
+                <a href="#industry" class="pseudo button">Industry</a>
+                <a href="" class="pseudo button">Personal</a>
+                <a href="#contact" class="pseudo button">Contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <header class="hero">
+                <div class="content">
+                    <h1 id="headline">Headline</h1>
+                    <p class="slogan">Slogan! Tagline!</p>
+                </div>
+            </header>
+            
+            <section id="about" class="visual">
+                <h2 class="center">About</h2>
+                <div class="content flex one two-500">
+                    <div class="none third-500">
+                        <img class="valign" src="https://via.placeholder.com/300" />
+                    </div>
+                    <div id="about" class="full two-third-500">
+                        <p class="valign tiny-pad">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla dui et urna auctor consequat. Vestibulum vestibulum nulla malesuada justo luctus pharetra. Nulla facilisi. Fusce commodo malesuada accumsan. Sed ac vestibulum nibh. Vestibulum porta justo sed neque blandit, quis pellentesque nisl interdum. Mauris neque neque, dictum nec sapien sit amet, commodo viverra mi.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="skills" class="visual">
+                <h2 class="center">Skills</h2>
+                <div class="content flex one three-500">
+                    <div class="center">
+                        <h4>Languages</h4>
+                        <p>
+                            One<br />
+                            Two<br />
+                            Three
+                        </p>
+                    </div>
+                    <div class="center">
+                        <h4>Frameworks</h4>
+                        <p>
+                            One<br />
+                            Two<br />
+                            Three
+                        </p>
+                    </div>
+                    <div class="center">
+                        <h4>Utilities</h4>
+                        <p>
+                            One<br />
+                            Two<br />
+                            Three
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="industry" class="visual">
+                <h2 class="center">One Experience</h2>
+                <div class="content flex one">
+                    <div class="flex one">
+                        <div class="none fifth-500">
+                            <img class="full valign" src="https://via.placeholder.com/200" />
+                        </div>
+                        <div class="full four-fifth-500" class="valign">
+                            <h4 class="desktop-align project-title">Place #1</h4>
+                            <p class="desktop-align"><i>Date | Place</i>
+                            <p class="tiny-pad">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla dui et urna auctor consequat. Click <a href="">here</a> to learn more!<br />
+                            </p>
+                            <p class="desktop-align skills">
+                                <b>Skills</b>: One, Two Three
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="visual">
+                <h2 class="center">Contact</h2>
+                <div class="content flex">
+                    <p class="center full">
+                        Feel free to reach out to me through <a href="">[email]</a> or <a href="">LinkedIn</a>.<br />
+                        <i class="fab fa-linkedin icon"></i>
+                        <i class="fab fa-github-square icon"></i>
+                        <i class="fas fa-envelope-square icon"></i>
+                    </p>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <p class="center">© Ganesh Valliappan, 2019 | <a href="https://github.com/gvalliap/gvalliap.github.io">Github Repo</a></p>
+            </footer>
+        </main>
+
+
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
 </html>
