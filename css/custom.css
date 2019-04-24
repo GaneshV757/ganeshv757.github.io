@@ -46,7 +46,7 @@
 
 .content {
     /*padding-top: 100px;*/
-    margin: 0 auto;
+    margin: -1em auto;
 }
 
 #headshot {
@@ -130,4 +130,57 @@ h2 {
 
 #footer {
     font-size: 14px;
+}
+
+.top {
+    margin-top: 3em;
+}
+
+.project-top {
+    margin-top: 2em;
+}
+
+.primary {
+    margin: 0 auto;
+}
+
+#photo {
+    margin-top: -4em;
+}
+
+.picture {
+    max-width: 100%;
+}
+
+.blue {
+    color: #fff;
+    background-color: #23A6D5;
+    padding-bottom: 3em;
+}
+
+.green {
+    color: #fff;
+    background-color: #23D5AB;
+    padding-bottom: 3em;
+}
+
+.pink {
+    color: #fff;
+    background-color: #E73C7E;
+    padding-bottom: 3em;
+}
+
+.orange {
+    color: #fff;
+    background-color: #EE7752;
+    padding-bottom: 3em;
+}
+
+td {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#back {
+    margin-top: -3em;
 }

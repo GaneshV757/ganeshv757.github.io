@@ -28,16 +28,21 @@
 
         <!-- Favicon
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="icon" type="image/png" href="images/favicon-16.png">
-
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#9f00a7">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
 
         <!-- Primary Page Layout
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <nav class="demo">
-            <a href="#" class="brand">
+        <nav>
+            <a href="" class="brand">
                 <img class="logo" src="https://via.placeholder.com/50" />
                 <span>About Me</span>
             </a>
@@ -55,21 +60,21 @@
             </div>
         </nav>
 
+        <header class="hero top">
+            <div class="content">
+                <h1 id="headline">Headline</h1>
+                <p class="slogan">Slogan! Tagline!</p>
+            </div>
+        </header>
+        
         <main>
-            <header class="hero">
-                <div class="content">
-                    <h1 id="headline">Headline</h1>
-                    <p class="slogan">Slogan! Tagline!</p>
-                </div>
-            </header>
-            
             <section id="about" class="visual">
                 <h2 class="center">About</h2>
                 <div class="content flex one two-500">
                     <div class="none third-500">
                         <img class="valign" src="https://via.placeholder.com/300" />
                     </div>
-                    <div id="about" class="full two-third-500">
+                    <div class="full two-third-500">
                         <p class="valign tiny-pad">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla dui et urna auctor consequat. Vestibulum vestibulum nulla malesuada justo luctus pharetra. Nulla facilisi. Fusce commodo malesuada accumsan. Sed ac vestibulum nibh. Vestibulum porta justo sed neque blandit, quis pellentesque nisl interdum. Mauris neque neque, dictum nec sapien sit amet, commodo viverra mi.</p>
                     </div>
                 </div>
@@ -112,11 +117,11 @@
                         <div class="none fifth-500">
                             <img class="full valign" src="https://via.placeholder.com/200" />
                         </div>
-                        <div class="full four-fifth-500" class="valign">
+                        <div id="place-1" class="full four-fifth-500" class="valign">
                             <h4 class="desktop-align project-title">Place #1</h4>
                             <p class="desktop-align"><i>Date | Place</i>
                             <p class="tiny-pad">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla dui et urna auctor consequat. Click <a href="">here</a> to learn more!<br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla dui et urna auctor consequat. Click <a href="project.html">here</a> to learn more!<br />
                             </p>
                             <p class="desktop-align skills">
                                 <b>Skills</b>: One, Two Three
@@ -142,7 +147,6 @@
                 <p class="center">© Ganesh Valliappan, 2019 | <a href="https://github.com/gvalliap/gvalliap.github.io">Github Repo</a></p>
             </footer>
         </main>
-
 
         <!-- End Document
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
