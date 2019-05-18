@@ -1,4 +1,15 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url(../webfonts/Nexa-Bold.otf);
+}
 
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: 'Quicksand', sans-serif;
+}
 
 .hero {
     height: 50%;
